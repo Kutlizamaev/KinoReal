@@ -1,0 +1,72 @@
+﻿@page
+@model KinoReal.Pages.MovieViewModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body {
+			background: url(@Url.Content("~/img/background.jpg"));
+		}
+		.back{
+			background-color: rgba(56, 56, 56, 0.900);
+			margin-left:80px;
+			margin-right:80px;
+		}
+		.desc{
+			background-color:white;
+			padding:20px;
+			border-radius: 20px;
+		}
+		.comments{
+			background-color:white;
+			padding:20px;
+			border-radius: 20px;
+			margin-bottom:80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="back">
+		<div class="d-flex flex-column flex-fill align-items-center">
+			<div style="margin-top: 110px;">
+				<video width=1400 height=700 controls>
+					<source src="~/movies/@Model.movieName" />
+				</video>
+			</div>
+			<div class="w-75 desc" style="margin-top: 30px; margin-bottom: 30px">
+				<h1>Описание</h1>
+				<p>Парень по имени Парень счастлив. Он живет в лучшем в мире городе Городе, работает на лучшей в мире работе в Банке и дружит с охранником по имени Приятель. И его совершенно не волнует, что банк грабят по нескольку раз на дню, а улицы города напоминают зону военных действий. Единственное, чего Парню не хватает для полного счастья — идеальной девушки, к которой у него имеется точный список требований. И вот однажды он видит на улице красотку, точь-в-точь как в его мечтах. Эта встреча изменит не только нашего главного героя, но и перевернет весь известный ему мир.</p>
+			</div>
+			<section class="container comments">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel">
+							<div class="panel-body">
+								<textarea class="form-control" rows="2" placeholder="Добавьте Ваш комментарий"></textarea>
+								<div class="mar-top clearfix">
+									<button class="btn btn-sm btn-primary pull-right" type="submit"> Добавить</button>
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-body">
+								<div class="media-block">
+									<div class="media-body">
+										<div class="mar-btm">
+											<p>Максим</p>
+											<p class="text-muted text-sm">19-06-2016</p>
+										</div>
+										<p>Секция с комментариями для сайта с подключенным Bootstrap!!!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

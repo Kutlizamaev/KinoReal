@@ -1,0 +1,201 @@
+﻿@page
+@model KinoReal.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	html {
+			overflow-x: hidden;
+		}
+</head>
+<body>
+	<main>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="vw-100" src="~/img/ru_7180303be64629e6e8673c9679e52d30_1600x520.jpg" alt="">
+				</div>
+
+				<div class="carousel-item">
+					<img class="vw-100" src="~/img/ru_aaab9c3295f8322f6e3ee763e7a30744c3_1600x520.jpg" alt="">
+				</div>
+
+				<div class="carousel-item">
+					<img class="vw-100" src="~/img/ru_bbb8155bb29c2bc4f1aa03a3c6d24e3c59d_1600x520.jpg" alt="">
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!--Премьеры-->
+		<div class="main_preview">
+			<div class="main_preview_text">
+				<h1>Премьеры</h1>
+			</div>
+			<div class="main_preview_card">
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/Cruise.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Круиз по Джунглям</h5>
+						<p class="card-text text-muted text-nowrap">Год выпуска: 2021, Приключения</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/freeguy.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Главный герой</h5>
+						<p class="card-text text-muted">Год выпуска: 2021, Комедии</p>
+						<div class="d-grid gap-2">
+							<a href="/movieView?name=glavniy_geroi" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/boss.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Босс-молокосос 2</h5>
+						<p class="card-text text-muted">Год выпуска: 2021, Комедии</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/time.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Время</h5>
+						<p class="card-text text-muted">Год выпуска: 2021, Триллеры</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/brothers.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Братаны</h5>
+						<p class="card-text text-muted ">Год выпуска: 2021, Комедии</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/shanchi.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Братаны</h5>
+						<p class="card-text text-muted ">Год выпуска: 2021, Комедии</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Сериалы-->
+		<div class="main_preview">
+			<div class="main_preview_text">
+				<h1>Сериалы</h1>
+			</div>
+			<div class="main_preview_card">
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/Cruise.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Круиз по Джунглям</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/freeguy.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Главный герой</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/boss.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Босс-молокосос 2</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/time.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Время</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/brothers.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Братаны</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+				<div class="card me-4" style="width: 18rem;">
+					<a href="">
+						<img src="~/img/shanchi.jpg" class="card-img-top" alt="...">
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Братаны</h5>
+						<p class="card-text">Год выпуска: 2021</p>
+						<div class="d-grid gap-2">
+							<a href="#" class="btn btn-primary btn-outline-dark btn-lg btn-light">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

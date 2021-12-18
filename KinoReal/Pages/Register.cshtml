@@ -1,0 +1,44 @@
+﻿@page
+@model KinoReal.Pages.Shared.RegisterModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		html {
+			overflow: hidden;
+		}
+
+		body {
+			background: url(@Url.Content("~/img/background.jpg"));
+		}
+	</style>
+</head>
+<body>
+	<div class="container_authorization_main position-absolute top-50 start-50 translate-middle">
+		<div class="authorization_main vh-100">
+			<form class="position-absolute top-50 start-50 translate-middle" method="post">
+				<div class="mb-3">
+					<label for="name" class="form-label text-white">Почта</label>
+					<input class="form-control" name="email">
+				</div>
+				<div class="mb-3">
+					<label for="name" class="form-label text-white">Логин</label>
+					<input class="form-control" name="username">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label text-white">Пароль</label>
+					<input type="password" class="form-control shadow-none" style="outline:none;" id="exampleInputPassword1" name="password">
+				</div>
+				<button type="submit" class="btn btn-outline-light">Зарегистрироваться</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
+	
+</body>
+</html>
